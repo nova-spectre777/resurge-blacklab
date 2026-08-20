@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object","required":["base_image_sha256","regions"],
+  "properties":{"base_image_sha256":{"type":"string"},"regions":{"type":"array","items":{"type":"object","required":["offset","length","level"],"properties":{"offset":{"type":"integer"},"length":{"type":"integer"},"level":{"type":"string"},"candidate_digest":{"type":"string"},"evidence":{"type":"array","items":{"type":"string"}}}}}}
+}

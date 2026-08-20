@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://resurge.dev/contracts/region-decision.schema.json",
+  "type":"object",
+  "required":["offset","length","level","confidence","normalized_entropy"],
+  "properties":{
+    "offset":{"type":"integer","minimum":0},
+    "length":{"type":"integer","minimum":1},
+    "level":{"enum":["PHYSICAL","PROVEN","CORROBORATED","INFERRED","AMBIGUOUS","LOST"]},
+    "confidence":{"type":"number","minimum":0,"maximum":1},
+    "normalized_entropy":{"type":"number","minimum":0,"maximum":1},
+    "candidate":{"type":"string"},
+    "proof_evidence":{"type":"array","items":{"type":"string"}}
+  }
+}

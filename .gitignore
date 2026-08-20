@@ -1,0 +1,12 @@
+engine-cpp/build/
+studio-ts/dist/
+plugin-java/out/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+*.img
+*.raw
+*.dd
+*.bin
+*.overlay

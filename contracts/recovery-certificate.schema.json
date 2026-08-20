@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["version","image_digest","overlay_digest","algorithm","regions","digest"],
+  "properties":{
+    "version":{"const":"resurge-certificate/v1"},
+    "image_digest":{"type":"string"},
+    "overlay_digest":{"type":"string"},
+    "algorithm":{"type":"string"},
+    "regions":{"type":"array"},
+    "digest":{"type":"string","pattern":"^[0-9a-f]{64}$"}
+  }
+}

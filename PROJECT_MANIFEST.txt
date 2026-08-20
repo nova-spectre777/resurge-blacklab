@@ -1,0 +1,5 @@
+RESURGE BLACKLAB v0.1
+Algorithm: MERA-ΩX PRIME
+Default verified languages: C++23, Go, Python, TypeScript, Java 21
+Research source tracks: CUDA C++, Zig, Julia, Lean 4, SystemVerilog
+Safety posture: image/clone analysis; no physical-disk write path in v0.1
